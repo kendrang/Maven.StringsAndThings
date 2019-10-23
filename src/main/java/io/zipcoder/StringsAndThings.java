@@ -41,7 +41,6 @@ public class StringsAndThings {
         String[] fusionString = base.split(remove);
         result = String.join("",fusionString);
 
-
         return result;
     }
 
@@ -54,7 +53,19 @@ public class StringsAndThings {
      *           containsEqualNumberOfIsAndNot("noisxxnotyynotxisi") // Should return true
      */
     public Boolean containsEqualNumberOfIsAndNot(String input){
-        return null;
+        boolean result = false;
+        int isCounterNum =0;
+        int notCounterNum =0;
+        String[] isCounter = input.split("is");
+       isCounterNum+= isCounter.length;
+       String[] notCounter = input.split("not");
+       notCounterNum +=notCounter.length;
+       if (isCounterNum==notCounterNum){
+           result = true;
+       }
+
+
+        return result;
     }
 
     /**
