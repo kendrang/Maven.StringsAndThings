@@ -22,7 +22,6 @@ public class StringsAndThings {
                counter +=1;
             }
 
-
         }return counter;
 
 
@@ -38,7 +37,12 @@ public class StringsAndThings {
      *           removeString("Hello there", "x") // Should return "Hello there"
      */
     public String removeString(String base, String remove){
-        return null;
+        String result = "";
+        String[] fusionString = base.split(remove);
+        result = String.join("",fusionString);
+
+
+        return result;
     }
 
     /**
