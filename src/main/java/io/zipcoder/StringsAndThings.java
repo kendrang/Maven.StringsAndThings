@@ -111,7 +111,7 @@ public class StringsAndThings {
                 }
 
             }
-        
+
         return tripleCounter;
         }
 
